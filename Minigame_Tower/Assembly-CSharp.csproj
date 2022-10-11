@@ -60,11 +60,11 @@
     <Compile Include="Assets\Resources\Scripts\Puzzle\Maps\MabController.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\DefenceManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\TouchManager.cs" />
+    <Compile Include="Assets\Resources\Scripts\Puzzle\InputActions.cs" />
     <Compile Include="Assets\Resources\Scripts\Blackjack\BlackjackManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\Characters\Character_Base.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\Core\CameraAgent.cs" />
     <Compile Include="Assets\Resources\Scripts\Platformer\PlatformerManager.cs" />
-    <Compile Include="Assets\Resources\Scripts\Puzzle\InputActions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

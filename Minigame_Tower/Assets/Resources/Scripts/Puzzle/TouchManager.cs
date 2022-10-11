@@ -67,7 +67,10 @@ public class TouchManager : MonoBehaviour
             {
                 Debug.Log("상");
                 if (index >= mabController.blockXSize)
+                {
                     targetObject = mabController.blocks[index - mabController.blockXSize];
+                
+                }
                 else
                     Debug.Log($"위쪽 이동불가{index}");
 
@@ -93,10 +96,10 @@ public class TouchManager : MonoBehaviour
 
             if (touchedObject != null && targetObject != null && touchedObject != targetObject)
             {
-
                 touchedObject.transform.GetChild(0).transform.parent = transform;
                 targetObject.transform.GetChild(0).transform.parent = touchedObject.transform;
                 transform.GetChild(0).transform.parent = targetObject.transform;
+                
             }
 
 
