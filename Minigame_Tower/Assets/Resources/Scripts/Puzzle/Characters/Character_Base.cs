@@ -13,5 +13,11 @@ public class Character_Base : MonoBehaviour
         sprite = transform.GetComponent<SpriteRenderer>();
         random = (int)Random.Range(0.0f, sprites.Length);
         sprite.sprite = sprites[random];
+        
+    }
+
+    private void Update()
+    {
+        transform.position = transform.parent.position;
     }
 }
