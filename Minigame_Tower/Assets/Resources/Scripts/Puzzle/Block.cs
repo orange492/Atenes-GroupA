@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
-using UnityEngine.UIElements;
-using Unity.VisualScripting;
+
 
 public class Block : MonoBehaviour
 {
