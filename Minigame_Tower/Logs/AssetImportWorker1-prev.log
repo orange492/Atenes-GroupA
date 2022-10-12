@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'ko' Physical Memory: 16321 MB
+Built from '2021.3/staging' branch; Version is '2021.3.1f1 (3b70a0754835) revision 3895456'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ko' Physical Memory: 16297 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+C:\Program Files\Unity\2021.3.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/Atents/Documents/GitHub/Atenes-GroupA/Minigame_Tower
+C:/Unity/Atenes-GroupA/Minigame_Tower
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64665
-Successfully changed project path to: C:/Users/Atents/Documents/GitHub/Atenes-GroupA/Minigame_Tower
-C:/Users/Atents/Documents/GitHub/Atenes-GroupA/Minigame_Tower
+52218
+Successfully changed project path to: C:/Unity/Atenes-GroupA/Minigame_Tower
+C:/Unity/Atenes-GroupA/Minigame_Tower
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,60 +47,807 @@ C:/Users/Atents/Documents/GitHub/Atenes-GroupA/Minigame_Tower
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 628.31 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 88.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Atents/Documents/GitHub/Atenes-GroupA/Minigame_Tower/Assets
+Initialize engine version: 2021.3.1f1 (3b70a0754835)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity/Atenes-GroupA/Minigame_Tower/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 710 (ID=0x128b)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   NVIDIA
-    VRAM:     984 MB
-    Driver:   30.0.14.7381
+    VRAM:     5992 MB
+    Driver:   30.0.15.1215
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+Mono path[0] = 'C:/Program Files/Unity/2021.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.155223 seconds.
+Register platform support module: C:/Program Files/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006426 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 164.10 ms, found 4 plugins.
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 85.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.408 seconds
+- Completed reload, in  0.684 seconds
 Domain Reload Profiling:
-	ReloadAssembly (7409ms)
-		BeginReloadAssembly (5645ms)
+	ReloadAssembly (684ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1160ms)
-			LoadAssemblies (5643ms)
+		EndReloadAssembly (489ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (657ms)
+			SetupTypeCache (112ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (406ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (292ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (55ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (164ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (99ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 1.090821 seconds.
+Registered in 0.007687 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 90.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1320ms)
+		BeginReloadAssembly (236ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (134ms)
+		EndReloadAssembly (963ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (487ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3934 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (225.6 KB). Loaded Objects now: 4388.
+Memory consumption went from 152.1 MB to 151.9 MB.
+Total: 3.310200 ms (FindLiveObjects: 0.352500 ms CreateObjectMapping: 0.387100 ms MarkObjects: 2.421000 ms  DeleteObjects: 0.148700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006421 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.040 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1041ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (799ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3942 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (0.8 MB). Loaded Objects now: 4391.
+Memory consumption went from 154.1 MB to 153.3 MB.
+Total: 3.264500 ms (FindLiveObjects: 0.314400 ms CreateObjectMapping: 0.213100 ms MarkObjects: 2.347800 ms  DeleteObjects: 0.388100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11370.621249 seconds.
+  path: Assets/Resources/Font/NanumBarunGothic SDFAA.asset
+  artifactKey: Guid(5fb4dcd841e94e942a1433e6ea74a23b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Font/NanumBarunGothic SDFAA.asset using Guid(5fb4dcd841e94e942a1433e6ea74a23b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8cad238968e926e7d0f585e48a28d1ed') in 0.392799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Resources/Scripts/Puzzle/Characters/Character_Base.cs
+  artifactKey: Guid(99e8969440921914491f0b548c86d24d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Scripts/Puzzle/Characters/Character_Base.cs using Guid(99e8969440921914491f0b548c86d24d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '521c1a3163a54b4e7276932099e4fa29') in 0.011763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Bear.psd
+  artifactKey: Guid(061a30582e9a6462d91cd6a24d7e2ea6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Bear.psd using Guid(061a30582e9a6462d91cd6a24d7e2ea6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ccf515a364e6d007d4453e843b801bf7') in 0.032003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Cat/Grey-Cat.png
+  artifactKey: Guid(1f0452ea2f2637a44902634aeca67993) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Cat/Grey-Cat.png using Guid(1f0452ea2f2637a44902634aeca67993) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1820af862b354d55db52f313b1b29c1e') in 0.015989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+  artifactKey: Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc using Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '37bfe3788266fdadc10e6fe72fb463c8') in 0.011672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Img/Defence/Block.jpg
+  artifactKey: Guid(19d5d718d2f49ab4e867208d96996248) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Defence/Block.jpg using Guid(19d5d718d2f49ab4e867208d96996248) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '037598b1b238a6403642b115e1cce487') in 0.012272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/Black-Mouse.png
+  artifactKey: Guid(ddf39ccb72d7c674aa2e426fea8130a0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/Black-Mouse.png using Guid(ddf39ccb72d7c674aa2e426fea8130a0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eff13ff69c40d0d4b6aae5e420f616b8') in 0.009864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/Blue-Duck.png
+  artifactKey: Guid(cbf8dfc4712aa6f49b3adceccbec9d51) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/Blue-Duck.png using Guid(cbf8dfc4712aa6f49b3adceccbec9d51) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e57da2afee48d734c2bb996cd8fed188') in 0.011311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Cat/Orange-Cat.png
+  artifactKey: Guid(eaa41b6eb1d10604e9755ca0bf5ec8a5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Cat/Orange-Cat.png using Guid(eaa41b6eb1d10604e9755ca0bf5ec8a5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd66b369a4b6e9b9a480570a5c2ce3e3f') in 0.009862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Jump/JumpScene.unity
+  artifactKey: Guid(b17bf40112eda0e4b90e7e78e6f364db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/Jump/JumpScene.unity using Guid(b17bf40112eda0e4b90e7e78e6f364db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a7f28ae9372251421b9eb76d6005f442') in 0.007600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Cat.psd
+  artifactKey: Guid(8b09e6710cec544aabb7b259c21c05c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Cat.psd using Guid(8b09e6710cec544aabb7b259c21c05c2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13d71415fd94ba18d80fa2280c7e740d') in 0.016902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c17af5d3d7946dda9046e81546c278e') in 0.014242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Black-Frog.png
+  artifactKey: Guid(4d0c4d20ec4574f41badfe8417c0d41b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Black-Frog.png using Guid(4d0c4d20ec4574f41badfe8417c0d41b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '38d342a0c44904eb8b01a78e0709fe63') in 0.010142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Dog.ai
+  artifactKey: Guid(329f92b968ef14bb7ac32f1cf17ccf80) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Dog.ai using Guid(329f92b968ef14bb7ac32f1cf17ccf80) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9667962798a1abd64fe3af0ce489ce7d') in 0.010831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  artifactKey: Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader using Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f0a20e2f11ce1a42fe5a7472e0e352ae') in 0.013274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7a7bf72deec38ab221cd1885955cbd0d') in 0.008119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/BlackWhite-Dog.png
+  artifactKey: Guid(952e0a082b5c0404ca9c5b9c4dfb8622) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/BlackWhite-Dog.png using Guid(952e0a082b5c0404ca9c5b9c4dfb8622) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8279f74b5d7df2b6c7963e425be36cf4') in 0.008792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+  artifactKey: Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF.shader using Guid(68e6db2ebdc24f95958faec2be5558d6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '387cbc1390edb83d39d2cc6a9d92034e') in 0.009198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Rabbit.ai
+  artifactKey: Guid(54ac324da751d4dad8d198c5b6478ef6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Rabbit.ai using Guid(54ac324da751d4dad8d198c5b6478ef6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4344f5ee34fd65fa7089620cdf875560') in 0.008754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/White-Dog.png
+  artifactKey: Guid(507ef1410c835754cb7a18e6ed82270e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/White-Dog.png using Guid(507ef1410c835754cb7a18e6ed82270e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4df926bccd4d111c45d0193f45256777') in 0.010128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Pig.psd
+  artifactKey: Guid(4559b659784e74295b43053827c41942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Pig.psd using Guid(4559b659784e74295b43053827c41942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0dde12e89ce1562bca0861ab733d2ef4') in 0.015154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Bear.ai
+  artifactKey: Guid(e87a11f73c1594b1eb9914e9e3a44d2e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Bear.ai using Guid(e87a11f73c1594b1eb9914e9e3a44d2e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dcd7b6b0fd9e579a8498aa1baea03be6') in 0.007498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Panda.psd
+  artifactKey: Guid(c2ba7fe08022a4e77ac485ad9c1ee1b1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Panda.psd using Guid(c2ba7fe08022a4e77ac485ad9c1ee1b1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab5bcedf75d5e7f98dc4718e729b9063') in 0.014965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Pig.ai
+  artifactKey: Guid(31781ea4a2010469da6ac06feada620b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Pig.ai using Guid(31781ea4a2010469da6ac06feada620b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b4cf9d346bc372fa5969f11b9cbb2090') in 0.006465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/White-Duck.png
+  artifactKey: Guid(84b33117778d73e468c694c71b4a0994) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/White-Duck.png using Guid(84b33117778d73e468c694c71b4a0994) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '03dbed2147128a7125092bd47e9f3c7e') in 0.008852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/Grey-Dog.png
+  artifactKey: Guid(ebef05c3604592b43ada66028930e5b9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/Grey-Dog.png using Guid(ebef05c3604592b43ada66028930e5b9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '28e541fc179fd798383618a914f0ca79') in 0.009316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/screen/screen_2.png
+  artifactKey: Guid(0cd397f8b8aba484399c5025d5159fcc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/screen/screen_2.png using Guid(0cd397f8b8aba484399c5025d5159fcc) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c593e2f1b42d62c6629f7a1310b7677') in 0.033554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/Brown-Dog.png
+  artifactKey: Guid(ac4e4b142225f994ab59a73d61b8a104) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/Brown-Dog.png using Guid(ac4e4b142225f994ab59a73d61b8a104) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '95a868f990b9c229851ca6c28b9712bd') in 0.010470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/Orange-Dog.png
+  artifactKey: Guid(a92f03f173a2f5a468b901777c234b66) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Dog/Orange-Dog.png using Guid(a92f03f173a2f5a468b901777c234b66) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d0fb592a9b6cf4ca8ccc1813512c091') in 0.010200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+  artifactKey: Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader using Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eb68d8eed5d4e8b50d93d590a3bc611c') in 0.008992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/White-Mouse.png
+  artifactKey: Guid(8bfedd6dc1f97c441a059c4edbd2489c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/White-Mouse.png using Guid(8bfedd6dc1f97c441a059c4edbd2489c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef3a938a6ad89ddd4372ad085a02a822') in 0.008571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Frog.ai
+  artifactKey: Guid(2772c26b21c664c87af19a56c46da127) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Frog.ai using Guid(2772c26b21c664c87af19a56c46da127) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d51d5cb44f58d221a624aab0e4773e6') in 0.007610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0eac0c5abf9263f78d1768e2453ba2cb') in 0.009330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+  artifactKey: Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader using Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd0d650d46b8781ae23fd20068e1d2663') in 0.008519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Scripts/Puzzle/Block.cs
+  artifactKey: Guid(a07daf3bd79d9a442b31ad9f5b6bd431) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Scripts/Puzzle/Block.cs using Guid(a07daf3bd79d9a442b31ad9f5b6bd431) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '01d08a13ce4f69a7b38857b349cac188') in 0.007101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+  artifactKey: Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader using Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e18cbfb1e5ac5986e5eba7bf3366a922') in 0.008387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Panda/Brown-Panda.png
+  artifactKey: Guid(220e5d26f197c0546a90a5ce8fd42c5f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Panda/Brown-Panda.png using Guid(220e5d26f197c0546a90a5ce8fd42c5f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cd4e424264fac0bc22847ea5fd7a3fd2') in 0.009515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/White-Rabbit.png
+  artifactKey: Guid(4406465d9db61ed4b8e18c212b5b94f2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/White-Rabbit.png using Guid(4406465d9db61ed4b8e18c212b5b94f2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'de289d1966a31e975c63bfe104a591bf') in 0.010734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Panda/Black-Panda.png
+  artifactKey: Guid(78920b4f46583ce4bbdd5c4445dbd928) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Panda/Black-Panda.png using Guid(78920b4f46583ce4bbdd5c4445dbd928) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd6da25bb4e83a5871486b0394170cf50') in 0.009526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Black-Rabbit.png
+  artifactKey: Guid(01c1dc888499e20439f9d90fbd90cc11) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Black-Rabbit.png using Guid(01c1dc888499e20439f9d90fbd90cc11) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f64677407d947cbbd46c4daf3ee23941') in 0.008724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Pig/White-Pig.png
+  artifactKey: Guid(b3b09497cc899764897ab8367f156ab6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Pig/White-Pig.png using Guid(b3b09497cc899764897ab8367f156ab6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2185f361ac5444f27f359d120206a75c') in 0.009036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Pink-Rabbit.png
+  artifactKey: Guid(66314a22d21c72f4baca7d184cfa3601) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Pink-Rabbit.png using Guid(66314a22d21c72f4baca7d184cfa3601) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c1a2a292900f3af34a86c22ea8401bd') in 0.008876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Grey-Rabbit.png
+  artifactKey: Guid(1d048883c33731749857271b5c8bdaf2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Grey-Rabbit.png using Guid(1d048883c33731749857271b5c8bdaf2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d31fccf7306e5c9451dc955dd4cc240') in 0.008945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Panda/Grey-Racoon.png
+  artifactKey: Guid(72187552bc3f46a418825fbaed426b01) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Panda/Grey-Racoon.png using Guid(72187552bc3f46a418825fbaed426b01) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '42ce8f40292133863ec363a476c42700') in 0.008751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Rabbit.psd
+  artifactKey: Guid(bf5daef61404f48f3814cf9ffd3441e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Rabbit.psd using Guid(bf5daef61404f48f3814cf9ffd3441e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c604d63914b9a3cc78751b01509f9a96') in 0.014916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Bear/yellow-bear.png
+  artifactKey: Guid(16bd891a66d6db640a1f2160ddd6230a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Bear/yellow-bear.png using Guid(16bd891a66d6db640a1f2160ddd6230a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8e125d9e98b194169cfc67cc227cfe6c') in 0.009429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c489e62948304293684e84cc01b7bfdb') in 0.012199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Deer/Grey-Deer.png
+  artifactKey: Guid(9e198b556fd81834fa2b55359bc4bc4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Deer/Grey-Deer.png using Guid(9e198b556fd81834fa2b55359bc4bc4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5d75b82f5488846d2dd614033df8a186') in 0.009607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/Blue-Mouse.png
+  artifactKey: Guid(ae3a38d8f94373b48849a57316733920) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/Blue-Mouse.png using Guid(ae3a38d8f94373b48849a57316733920) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4d9a155b61b49b0721dee9b485d22ac8') in 0.011539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Deer/White-Deer.png
+  artifactKey: Guid(d774e659a20d9904094f616a6468acfd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Deer/White-Deer.png using Guid(d774e659a20d9904094f616a6468acfd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '077be4f15c630e51093f93abaf06164f') in 0.009195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Pig/Brown-Pig.png
+  artifactKey: Guid(d4e108c1b515f1d4d9e237a0972d6158) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Pig/Brown-Pig.png using Guid(d4e108c1b515f1d4d9e237a0972d6158) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c88fa38c420b6552226e2f4216715e2') in 0.009344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Panda.ai
+  artifactKey: Guid(7a31a05c7c3df453eb7b4dc73d8d97f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Panda.ai using Guid(7a31a05c7c3df453eb7b4dc73d8d97f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f24a8c726955b5b7706242d851336fa') in 0.009064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Frog.psd
+  artifactKey: Guid(97d00cc52c9f04b12bcb47ee43b1fc03) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Frog.psd using Guid(97d00cc52c9f04b12bcb47ee43b1fc03) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e29acfb6fc59863bd2a01cfac899e4a2') in 0.014736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Brown-Rabbit.png
+  artifactKey: Guid(46eca9d2f5710bf40a3a8b5e7117a600) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Rabbit/Brown-Rabbit.png using Guid(46eca9d2f5710bf40a3a8b5e7117a600) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '09f8803b554c9d6d940f204222501737') in 0.010793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '614574ba1c93dd7da26abeb0f1beb7be') in 0.008139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/Yellow-Duck.png
+  artifactKey: Guid(e54e1adaa2f5b0147a5ce820a6788f12) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/Yellow-Duck.png using Guid(e54e1adaa2f5b0147a5ce820a6788f12) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6d0e818e6aed4eeab17d4bb7d3c0c887') in 0.009529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/White-Frog.png
+  artifactKey: Guid(10b7c6e9288e70040aefad9f9b2b7e23) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/White-Frog.png using Guid(10b7c6e9288e70040aefad9f9b2b7e23) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2031c4fa34953d4f27edb56570c06a7e') in 0.010122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/Green-Duck.png
+  artifactKey: Guid(f028ef29f7b233b4e96bea54b1d43361) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Duck/Green-Duck.png using Guid(f028ef29f7b233b4e96bea54b1d43361) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bed26b851be66648f4b012d96f848d06') in 0.009644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed667093ba5b522d6e0ff3fe02be78fb') in 0.009273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Green-Frog.png
+  artifactKey: Guid(98e6fdb066832c24b8b4c795bde8b201) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Green-Frog.png using Guid(98e6fdb066832c24b8b4c795bde8b201) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9831662cf3a6bf78e85edbdc1599192e') in 0.009403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+  artifactKey: Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt using Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4854953800b9cd5fa511eb70f73d611d') in 0.007844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Pig/Black-Pig.png
+  artifactKey: Guid(73f899c6b8be5ed4fb92d106bc71b906) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Pig/Black-Pig.png using Guid(73f899c6b8be5ed4fb92d106bc71b906) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e786f114cf8f739af88300f87a916100') in 0.009311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Bear/Black-Bear.png
+  artifactKey: Guid(1d43987c40ee2964eb8a10128de90f34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Bear/Black-Bear.png using Guid(1d43987c40ee2964eb8a10128de90f34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6a7bb88afeaa9fa3406c615b45015f94') in 0.009990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0251d0aa1181e268afe9bd1882eeab07') in 0.009107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Scripts/Blackjack/BlackjackManager.cs
+  artifactKey: Guid(8af0d56b46d89c74caebd085e15cd0ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Scripts/Blackjack/BlackjackManager.cs using Guid(8af0d56b46d89c74caebd085e15cd0ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '998a6126aafb7ae6ac46af5375de7d1e') in 0.008174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Scripts/Puzzle/Core/CameraAgent.cs
+  artifactKey: Guid(d7923488314871a498030972f7c4fc11) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Scripts/Puzzle/Core/CameraAgent.cs using Guid(d7923488314871a498030972f7c4fc11) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4bbba2e588aaee9f78c782430c7159f3') in 0.007966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fe2f837c76b3d4459bed0a047d14e6cc') in 0.008934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Deer/Orange-Deer.png
+  artifactKey: Guid(2f3ae43eed0eca34d93f92eafbd82e0c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Deer/Orange-Deer.png using Guid(2f3ae43eed0eca34d93f92eafbd82e0c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '113e4c5117452df5d4ff8e33028594eb') in 0.009470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f779f4446e834d136f8dbdae2f4f05bf') in 0.008294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+  artifactKey: Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Sprite.shader using Guid(cf81c85f95fe47e1a27f6ae460cf182c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a455531cb0fef01153f2743fa15e2211') in 0.008357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Blue-Frog.png
+  artifactKey: Guid(7cb521ff008883740a42504fe83be1f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Blue-Frog.png using Guid(7cb521ff008883740a42504fe83be1f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '77487d2443c38bb7a5a53d8b15d4b24c') in 0.009028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c3c28216aa6a2d7c61ba9a0ed3f97f09') in 0.008618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Deer.ai
+  artifactKey: Guid(8fe0238e0840844be8a406564838050b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/AI/Deer.ai using Guid(8fe0238e0840844be8a406564838050b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0a93cf993ce1e74de53498e9cb6d48a3') in 0.007829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Cat/White-Cat.png
+  artifactKey: Guid(343100d7d06a9db4c9cbb8749a363e82) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Cat/White-Cat.png using Guid(343100d7d06a9db4c9cbb8749a363e82) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc91555e328f20436c3da45effb3dbdd') in 0.011238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Brown-Frog.png
+  artifactKey: Guid(633b040f63b1ebd47a738d7191f15daa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Frog/Brown-Frog.png using Guid(633b040f63b1ebd47a738d7191f15daa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7e744b6157b4aef5a8d8cd7b25330280') in 0.009807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Mouse.psd
+  artifactKey: Guid(6047e32cd248c4e5783c1acd426cf05b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PSD/Mouse.psd using Guid(6047e32cd248c4e5783c1acd426cf05b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed2c4e080679463b72273274aeb9a49d') in 0.015740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/Grey-Mouse.png
+  artifactKey: Guid(524712abb894db54cad4e257bff90eba) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Resources/Img/Puzzle/PetsPack/Pack/PNG/Mouse/Grey-Mouse.png using Guid(524712abb894db54cad4e257bff90eba) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3bcbdcf6179fcb82f5683eeffab25ea9') in 0.009517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5fe96cf21d6368668de4f71cad44de54') in 0.029878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.355074 seconds.
+  path: Assets/Resources/Font/NotoSansKR-Regular SDF.asset
+  artifactKey: Guid(3b6f18e4c0724f041871c332a9cd7383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Font/NotoSansKR-Regular SDF.asset using Guid(3b6f18e4c0724f041871c332a9cd7383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61176aae92681549a184acf1b4bde9f4') in 0.508825 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 41 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.7 MB). Loaded Objects now: 4435.
+Memory consumption went from 81.7 MB to 81.0 MB.
+Total: 3.353000 ms (FindLiveObjects: 0.261000 ms CreateObjectMapping: 0.173200 ms MarkObjects: 2.623800 ms  DeleteObjects: 0.294400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006159 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.106 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1107ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (868ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (392ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3940 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.7 MB). Loaded Objects now: 4437.
+Memory consumption went from 159.1 MB to 158.3 MB.
+Total: 3.437900 ms (FindLiveObjects: 0.355400 ms CreateObjectMapping: 0.310300 ms MarkObjects: 2.425400 ms  DeleteObjects: 0.345900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
