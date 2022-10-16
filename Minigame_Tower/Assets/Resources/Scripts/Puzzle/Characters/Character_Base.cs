@@ -7,53 +7,64 @@ public class Character_Base : MonoBehaviour
 {
     public Sprite[] sprites;
     SpriteRenderer sprite;
-    int random;
+    int animalType;
     public Animator anim;
     UnityEngine.Vector3 targetDir;
+    public int AnimalType
+    {
+        get => animalType;
+        set
+        {
+            animalType = value;
+        }
+    }
+
+    enum Animal
+    {
+        Bear,
+        Cat,
+        Deer,
+        Dog,
+        Duck
+        //Mouse,
+        //Panda,
+       // Pig,
+        //Rabbit
+    }
+    
+  
+
 
     private void Awake()
     {
         sprite = transform.GetComponent<SpriteRenderer>();
-        random = (int)Random.Range(0.0f, sprites.Length-0.1f);
-        sprite.sprite = sprites[random];
+        
+        AnimalType = (int)Random.Range(0.0f, sprites.Length - 0.1f);
+        sprite.sprite = sprites[AnimalType];
         anim = GetComponent<Animator>();
-
+     
     }
 
     private void Start()
     {
-        StartCoroutine(RefreshPosition());
+
     }
 
     private void Update()
     {
-        //if(transform.position != transform.parent.position)
-        //{
-        //    ActiveAnimation();
-        //}
+
+      
     }
 
-    IEnumerator RefreshPosition()
+
+
+ public void AnimationActive(string direction)
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(1.0f);
-            transform.position = transform.parent.position;
-        }
-    }
 
-    //void ActiveAnimation()
-    //{
-    //    targetDir = transform.parent.position - transform.position;
-    //    if (targetDir.x > 0.5)
-    //    {
-    //        anim.SetTrigger("Right");
-    //    }
-    //    if(targetDir.x < -0.5)
-    //        anim.SetTrigger("Left");
-    //    if(targetDir.y>0.5)
-    //        anim.SetTrigger("Up");
-    //    if(targetDir.y<-0.5)
-    //        anim.SetTrigger("Down");
-    //}
+            anim.SetTrigger(direction);
+    
+       
+        
+
+    }
 }

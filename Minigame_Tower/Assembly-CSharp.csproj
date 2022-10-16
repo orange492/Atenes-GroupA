@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\Scripts\Puzzle\Block.cs" />
-    <Compile Include="Assets\Resources\Scripts\Puzzle\Maps\MabController.cs" />
+    <Compile Include="Assets\Resources\Scripts\Puzzle\Maps\BlockController.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\DefenceManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\TouchManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\InputActions.cs" />
