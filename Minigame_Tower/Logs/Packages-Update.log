@@ -55,3 +55,11 @@ The following packages were updated:
   com.unity.ide.rider from version 3.0.13 to 3.0.15
   com.unity.ide.visualstudio from version 2.0.14 to 2.0.16
   com.unity.visualscripting from version 1.7.6 to 1.7.8
+
+=== Mon Oct 17 14:28:28 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.inputsystem from version 1.3.0 to 1.4.2
