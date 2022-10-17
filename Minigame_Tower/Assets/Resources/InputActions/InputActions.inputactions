@@ -28,6 +28,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Defence",
+            "id": "cb5d992d-768d-4d45-a55f-e1d7edf2ff88",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "efbc6a0f-e190-43f0-921c-3cc75673c19f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "babdb55a-e491-4b95-a834-57a682301623",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
