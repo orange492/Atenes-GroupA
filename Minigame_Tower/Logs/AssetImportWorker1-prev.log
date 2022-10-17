@@ -15,7 +15,15 @@ C:/Unity/Atenes-GroupA/Minigame_Tower
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
+<<<<<<< HEAD
+<<<<<<< HEAD
 49316
+=======
+57873
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+57873
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 Successfully changed project path to: C:/Unity/Atenes-GroupA/Minigame_Tower
 C:/Unity/Atenes-GroupA/Minigame_Tower
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +55,15 @@ C:/Unity/Atenes-GroupA/Minigame_Tower
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 93.42 ms, found 4 plugins.
+=======
+Refreshing native plugins compatible for Editor in 100.60 ms, found 4 plugins.
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+Refreshing native plugins compatible for Editor in 100.60 ms, found 4 plugins.
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.1f1 (3b70a0754835)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -63,10 +79,20 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2021.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< HEAD
+<<<<<<< HEAD
 Registered in 0.006396 seconds.
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 96.85 ms, found 4 plugins.
@@ -76,11 +102,37 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (715ms)
 		BeginReloadAssembly (92ms)
+=======
+Registered in 0.006483 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 97.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Domain Reload Profiling:
+	ReloadAssembly (690ms)
+		BeginReloadAssembly (82ms)
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+Registered in 0.006483 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 97.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Domain Reload Profiling:
+	ReloadAssembly (690ms)
+		BeginReloadAssembly (82ms)
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
+<<<<<<< HEAD
 		EndReloadAssembly (502ms)
 			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -95,17 +147,51 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (134ms)
 				ProcessInitializeOnLoadMethodAttributes (52ms)
+=======
+		EndReloadAssembly (495ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+=======
+		EndReloadAssembly (495ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+			SetupTypeCache (108ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (304ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (54ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (98ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (101ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+<<<<<<< HEAD
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
+<<<<<<< HEAD
 Registered in 0.008657 seconds.
+=======
+Registered in 0.007941 seconds.
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+Registered in 0.007941 seconds.
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Unity\Atenes-GroupA\Minigame_Tower\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
+<<<<<<< HEAD
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 94.88 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -113,10 +199,32 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1241ms)
 		BeginReloadAssembly (118ms)
+=======
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 87.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.324 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1325ms)
+		BeginReloadAssembly (221ms)
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 87.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.324 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1325ms)
+		BeginReloadAssembly (221ms)
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
+<<<<<<< HEAD
 			CreateAndSetChildDomain (18ms)
 		EndReloadAssembly (1004ms)
 			LoadAssemblies (97ms)
@@ -132,6 +240,34 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (106ms)
 				ProcessInitializeOnLoadAttributes (296ms)
 				ProcessInitializeOnLoadMethodAttributes (42ms)
+=======
+			CreateAndSetChildDomain (125ms)
+		EndReloadAssembly (975ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (260ms)
+			ReleaseScriptCaches (1ms)
+=======
+			CreateAndSetChildDomain (125ms)
+		EndReloadAssembly (975ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (260ms)
+			ReleaseScriptCaches (1ms)
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (511ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (248ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+<<<<<<< HEAD
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -140,12 +276,27 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+<<<<<<< HEAD
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4287 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 38 unused Assets / (55.9 KB). Loaded Objects now: 4746.
 Memory consumption went from 167.6 MB to 167.5 MB.
 Total: 3.226900 ms (FindLiveObjects: 0.326900 ms CreateObjectMapping: 0.335600 ms MarkObjects: 2.498300 ms  DeleteObjects: 0.065400 ms)
+=======
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+=======
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+Unloading 3947 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (225.4 KB). Loaded Objects now: 4402.
+Memory consumption went from 154.4 MB to 154.2 MB.
+Total: 3.282700 ms (FindLiveObjects: 0.311000 ms CreateObjectMapping: 0.270600 ms MarkObjects: 2.552000 ms  DeleteObjects: 0.148300 ms)
+<<<<<<< HEAD
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -157,6 +308,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< HEAD
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
@@ -264,6 +416,8 @@ Unloading 4264 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 23 unused Assets / (24.6 KB). Loaded Objects now: 4753.
 Memory consumption went from 165.6 MB to 165.6 MB.
 Total: 3.124200 ms (FindLiveObjects: 0.313000 ms CreateObjectMapping: 0.289900 ms MarkObjects: 2.498600 ms  DeleteObjects: 0.021600 ms)
+=======
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -275,6 +429,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< HEAD
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
@@ -7290,3 +7445,7 @@ C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFE364F0000), size: 1982464 (r
 
 A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
  * C:/Users/orang/AppData/Local/Temp/Unity/Editor/Crashes
+=======
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
+=======
+>>>>>>> ceebe2d996754ac39fcd188b98df0e7099b461e6
