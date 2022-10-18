@@ -63,13 +63,16 @@
     <Compile Include="Assets\Resources\Scripts\Defence\Unit.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\DefenceManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\TouchManager.cs" />
-    <Compile Include="Assets\Resources\Scripts\Puzzle\InputActions.cs" />
+    <Compile Include="Assets\Resources\InputActions\InputActions.cs" />
+    <Compile Include="Assets\Resources\Scripts\Defence\Manager\ClickManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Utill\Singleton.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\MapManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\Characters\Character_Base.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\DataManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Puzzle\Core\CameraAgent.cs" />
     <Compile Include="Assets\Resources\Scripts\Platformer\PlatformerManager.cs" />
+    <Compile Include="Assets\Resources\Scripts\Blackjack\CardScript.cs" />
+    <Compile Include="Assets\Resources\Scripts\Blackjack\DeckScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
