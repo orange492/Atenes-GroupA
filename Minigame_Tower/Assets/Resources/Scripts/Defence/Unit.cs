@@ -5,9 +5,9 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     GameObject[] stars = new GameObject[5];
-    int code;
+    public int type { get; set; }
+    public int star { get; set; }
     int level;
-    int star;
     float dmg;
 
     // Start is called before the first frame update
@@ -26,23 +26,50 @@ public class Unit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void Init(int _code, int _star)
+    public void Init(int _type, int _star)
     {
         this.gameObject.SetActive(true);
-        code = _code;
+        type = _type;
         star = _star;
         PrintUnit();
     }
 
     void PrintUnit()
     {
-        for (int i = 0; i < star; i++)
+        for (int i = 0; i < stars.Length; i++)
         {
-            if(!stars[i].activeSelf)
+            if (!stars[i].activeSelf && star > i)
+            {
                 stars[i].SetActive(true);
+            }
+            else if (stars[i].activeSelf && star <= i)
+            {
+                stars[i].SetActive(false);
+            }
+        }
+    }
+
+    public void ResetPos()
+    {
+        transform.localPosition = new Vector3(0, 0, 0);
+        this.gameObject.SetActive(false);
+    }
+
+    public void Merge()
+    {
+        star++;
+        PrintUnit();
+    }
+
+    public void SetOrder(int value)
+    {
+        this.GetComponent<SpriteRenderer>().sortingOrder += value;
+        for (int i = 0; i < stars.Length; i++)
+        {
+            stars[i].GetComponent<SpriteRenderer>().sortingOrder += value;
         }
     }
 }

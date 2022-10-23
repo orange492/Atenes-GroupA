@@ -9,12 +9,17 @@ public class DefenceManager : Singleton<DefenceManager>
     void Start()
     {
         mapMgr = FindObjectOfType<MapManager>();
-        mapMgr.InitMap(DataManager.Instance.map[0], DataManager.Instance.map[1]);
+        mapMgr.InitMap();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void SetUnitCnt(int value)
+    {
+        mapMgr.unitCnt += value;
     }
 }
