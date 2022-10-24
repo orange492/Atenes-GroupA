@@ -25,6 +25,6 @@ public class EnemySpawner : MonoBehaviour
     {
         GameObject enemy = Instantiate(enemyPref, this.transform);
         Enemy scrEnemy = enemy.GetComponent<Enemy>();
-        scrEnemy.Init(tr, 500); //수정예정!
+        scrEnemy.Init(tr, 1000); //수정예정!
     }
 }

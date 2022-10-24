@@ -6,7 +6,7 @@ using TMPro;
 public class Enemy : MonoBehaviour
 {
     [SerializeField]
-    TextMeshProUGUI tHp;
+    TextMeshPro tHp;
 
     Transform[] tr;
     int dir = 0;
@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //tHp.text = hp.ToString();
+        tHp.text = hp.ToString();
         if (dir == 0 && Mathf.Abs(tr[dir].position.y - this.transform.position.y) < 0.01f)
         {
             dir++;
