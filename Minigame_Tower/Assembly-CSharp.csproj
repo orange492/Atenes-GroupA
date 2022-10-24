@@ -74,6 +74,7 @@
     <Compile Include="Assets\Resources\Scripts\Puzzle\Core\CameraAgent.cs" />
     <Compile Include="Assets\Resources\Scripts\Platformer\PlatformerManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\EnemySpawner.cs" />
+    <Compile Include="Assets\Resources\Scripts\Defence\Enemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

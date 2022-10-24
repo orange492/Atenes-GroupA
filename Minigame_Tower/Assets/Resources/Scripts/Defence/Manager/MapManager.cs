@@ -56,7 +56,7 @@ public class MapManager : MonoBehaviour
                 break;
         }
         Unit unit = this.transform.GetChild(index).GetChild(0).gameObject.GetComponent<Unit>();
-        unit.Init(0, 1);
+        unit.Init(Random.Range(0, 5), 1); //수정예정!
         unitCnt++;
     }
 }
