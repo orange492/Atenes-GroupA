@@ -18,6 +18,14 @@ public class TouchManager : MonoBehaviour
     int targetIndexX;
     int targetIndexY;
     bool isMoving = false;
+    bool isClickLock = false;
+   IEnumerator delayIsClickLockCoroutine; 
+
+    public bool IsClickLock
+    {
+        get => isClickLock;
+        set => isClickLock = value;
+    }
 
 
 
@@ -25,7 +33,9 @@ public class TouchManager : MonoBehaviour
     private void Awake()
     {
         inputActions = new InputActions();
- 
+        delayIsClickLockCoroutine = DelaySetIsClickLock();
+
+
     }
     private void Start()
     {
@@ -41,18 +51,26 @@ public class TouchManager : MonoBehaviour
 
     private void OnDisable()
     {
+        inputActions.Touch.Touch.performed -= OnClick;
+        inputActions.Touch.Touch.canceled -= OffClick;
         inputActions.Touch.Disable();
     }
 
     private void OffClick(InputAction.CallbackContext obj)
     {
-    
+        StopAllCoroutines();
+        StartCoroutine(DelaySetIsClickLock());
 
+      
         if (touchedObject == null)
         {
             return;
         }
         if (!touchedObject.CompareTag("Block"))
+        {
+            return;
+        }
+        if (touchedObject.transform.childCount == 0)
         {
             return;
         }
@@ -66,72 +84,87 @@ public class TouchManager : MonoBehaviour
         if (dragDir.magnitude > Vector2.right.magnitude * 50)
         {
             float singedAngle = Vector2.SignedAngle(Vector2.right, dragDir);
-            
+
+
+
             if (singedAngle >= -45 && singedAngle < 45)
             {
-                Debug.Log("øÏ");
-                if (touchedIndexX<blockController.blockXSize-1 && !isMoving)
+                Debug.Log("Ïö∞");
+                if (touchedIndexX < blockController.blockXSize - 1 && !isMoving)
                 {
                     targetIndexX += 1;
                     targetObject = blockController.blocks[targetIndexY][targetIndexX];
+                    if(targetObject.transform.childCount == 0)
+                    {
+                        return;
+                    }
+                   
                     Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
                     targetCharacter.AnimationActive("Left");
                     touchedCharacter.AnimationActive("Right");
-                    
-                    
                 }
                 else
                 {
-                    Debug.Log("ø¿∏•¬  ¿Ãµø∫“∞°");
+                    Debug.Log("Ïò§Î•∏Ï™Ω Ïù¥ÎèôÎ∂àÍ∞Ä");
                 }
             }
             else if (singedAngle >= 45 && singedAngle < 135)
             {
-                Debug.Log("ªÛ");
-                if (touchedIndexY!>0 && !isMoving)
+                Debug.Log("ÏÉÅ");
+                if (touchedIndexY! > 0 && !isMoving)
                 {
                     targetIndexY -= 1;
-                    targetObject = blockController.blocks[targetIndexY][targetIndexX];
+                    targetObject = blockController.blocks[targetIndexY][targetIndexX]; if (targetObject.transform.childCount == 0)
+                    {
+                        return;
+                    }
                     Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
- 
+
+
                     targetCharacter.AnimationActive("Down");
                     touchedCharacter.AnimationActive("Up");
                 }
-                else
-                    Debug.Log($"¿ß¬  ¿Ãµø∫“∞°");
+                else Debug.Log($"ÏúÑÏ™Ω Ïù¥ÎèôÎ∂àÍ∞Ä");
 
             }
             else if (singedAngle >= 135 || singedAngle < -135)
             {
-                Debug.Log("¡¬");
-                if (touchedIndexX>0 && !isMoving)
+                Debug.Log("Ï¢å");
+                if (touchedIndexX > 0 && !isMoving)
                 {
                     targetIndexX -= 1;
-                    targetObject = blockController.blocks[targetIndexY][targetIndexX];
+                    targetObject = blockController.blocks[targetIndexY][targetIndexX]; if (targetObject.transform.childCount == 0)
+                    {
+                        return;
+                    }
                     Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-                
+
+
                     targetCharacter.AnimationActive("Right");
                     touchedCharacter.AnimationActive("Left");
                 }
                 else
                 {
-                    Debug.Log("øﬁ¬  ¿Ãµø∫“∞°");
+                    Debug.Log("ÏôºÏ™Ω Ïù¥ÎèôÎ∂àÍ∞Ä");
                 }
             }
             else
             {
-                Debug.Log("«œ");
-                if (touchedIndexY<blockController.blockYSize-1 && !isMoving)
+                Debug.Log("Ìïò");
+                if (touchedIndexY < blockController.blockYSize - 1 && !isMoving)
                 {
                     targetIndexY += 1;
-                    targetObject = blockController.blocks[targetIndexY][targetIndexX];
+                    targetObject = blockController.blocks[targetIndexY][targetIndexX]; if (targetObject.transform.childCount == 0)
+                    {
+                        return;
+                    }
                     Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-                    
+
+
                     targetCharacter.AnimationActive("Up");
                     touchedCharacter.AnimationActive("Down");
                 }
-                else
-                    Debug.Log("æ∆∑°¬  ¿Ãµø∫“∞°");
+                else Debug.Log("ÏïÑÎûòÏ™Ω Ïù¥ÎèôÎ∂àÍ∞Ä");
             }
 
             if (touchedObject != null && targetObject != null && touchedObject != targetObject)
@@ -140,20 +173,35 @@ public class TouchManager : MonoBehaviour
                 {
 
                     StartCoroutine(ChildChange(touchedObject, targetObject));
-                  
+
+
                 }
             }
 
         }
+        else
+        {
+            isClickLock = false;
+        }
+
 
     }
 
+
     private void OnClick(InputAction.CallbackContext obj)
     {
+        StopAllCoroutines();
+        StartCoroutine(DelaySetIsClickLock());
         onClickPosition = Mouse.current.position.ReadValue();
         touchedObject = null;
         targetObject = null;
 
+        if (isClickLock)
+        {
+            return;
+        }
+        
+        isClickLock = true;
         Vector2 touchPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         RaycastHit2D hitInformation = Physics2D.Raycast(touchPos, Camera.main.transform.forward);
         if (hitInformation.collider != null)
@@ -163,11 +211,10 @@ public class TouchManager : MonoBehaviour
             Debug.Log($"{touchedObject}");
 
             touchedIndexX = touchedObject.transform.GetComponent<Block>().IndexX;
-            touchedIndexY = touchedObject.transform.GetComponent<Block>().IndexY;
-                    targetIndexX = touchedIndexX;
-                    targetIndexY = touchedIndexY;
-   
-            
+            touchedIndexY = touchedObject.transform.GetComponent<Block>().IndexY; targetIndexX = touchedIndexX;
+            targetIndexY = touchedIndexY;
+
+
 
 
         }
@@ -176,15 +223,20 @@ public class TouchManager : MonoBehaviour
 
     IEnumerator ChildChange(GameObject touched, GameObject target)
     {
-        isMoving = true;
         yield return new WaitForSeconds(0.5f);
+        if(touched.transform.childCount==0||
+        target.transform.childCount == 0)
+        {
+            yield break;
+        }
+
         touched.transform.GetChild(0).transform.parent = transform;
         target.transform.GetChild(0).transform.parent = touched.transform;
-        transform.GetChild(0).transform.parent = target.transform;
-        if (blockController.ThreeMatchCheck(touchedIndexX, touchedIndexY) ||
+        transform.GetChild(0).transform.parent = target.transform; if (blockController.ThreeMatchCheck(touchedIndexX, touchedIndexY) ||
                         blockController.ThreeMatchCheck(targetIndexX, targetIndexY))
         {
-
+            blockController.ThreeMatchAction(touchedIndexX, touchedIndexY);
+            blockController.ThreeMatchAction(targetIndexX, targetIndexY);
         }
         else
         {
@@ -192,9 +244,12 @@ public class TouchManager : MonoBehaviour
             target.transform.GetChild(0).transform.parent = touched.transform;
             transform.GetChild(0).transform.parent = target.transform;
         }
-        isMoving = false;
+    }
 
-
-
+    public IEnumerator DelaySetIsClickLock()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("DelayLock");
+        IsClickLock = false;
     }
 }
