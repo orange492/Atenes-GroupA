@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Block
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -42,12 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BackGround
-    uniqueID: 3476657873
+  - name: Cards
+    uniqueID: 2190699715
     locked: 0
-  - name: Block
-    uniqueID: 523683211
-    locked: 0
-  - name: Character
-    uniqueID: 1797531741
+  - name: HUD
+    uniqueID: 1947087285
     locked: 0
