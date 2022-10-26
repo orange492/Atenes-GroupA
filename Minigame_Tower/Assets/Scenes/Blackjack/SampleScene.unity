@@ -906,6 +906,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328939239}
   m_CullTransparentMesh: 0
+--- !u!1 &423562246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423562248}
+  - component: {fileID: 423562249}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423562248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423562246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423562249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423562246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7d9b9e28e27044da11ebee692791eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dealBtn: {fileID: 470493376}
+  hitBtn: {fileID: 1461979413}
+  standBtn: {fileID: 805115008}
+  betBtn: {fileID: 932715677}
+  playerScript: {fileID: 1898117314}
+  dealerScript: {fileID: 1064139843}
+  scoreText: {fileID: 1299075885}
+  dealerScoreText: {fileID: 1588040543}
+  betsText: {fileID: 139522483}
+  cashText: {fileID: 328939241}
+  mainText: {fileID: 1104364429}
+  standBtnText: {fileID: 1162080802}
+  scoreText2: {fileID: 0}
+  betsText2: {fileID: 1711201028}
+  cashText2: {fileID: 1267749656}
+  hideCard: {fileID: 213205815}
+  pot: 20
 --- !u!1 &470493374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,67 +3013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
---- !u!1 &1658205096
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1658205097}
-  - component: {fileID: 1658205098}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1658205097
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658205096}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.65477645, y: -1.5650063, z: 0.0027980525}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1658205098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658205096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6dcba3def907e448a3f82cf479ec951, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dealBtn: {fileID: 0}
-  hitBtn: {fileID: 0}
-  standBtn: {fileID: 0}
-  betBtn: {fileID: 0}
-  playerScript: {fileID: 0}
-  dealerScript: {fileID: 0}
-  scoreText: {fileID: 0}
-  dealerScoreText: {fileID: 0}
-  betsText: {fileID: 0}
-  cashText: {fileID: 0}
-  mainText: {fileID: 0}
-  standBtnText: {fileID: 0}
-  scoreText2: {fileID: 0}
-  betsText2: {fileID: 0}
-  cashText2: {fileID: 0}
-  hideCard: {fileID: 0}
-  pot: 20
 --- !u!1 &1711201026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,7 +3376,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2032892851
 MonoBehaviour:

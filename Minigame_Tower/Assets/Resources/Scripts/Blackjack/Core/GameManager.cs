@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : Singletons<GameManager>
+public class GameManager : Singleton1<GameManager>
 {
    
 
