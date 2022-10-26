@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    [SerializeField]
+    Transform[] tr;
+    [SerializeField]
+    GameObject enemyPref;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +19,12 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void CrtEnemy()
+    {
+        GameObject enemy = Instantiate(enemyPref, this.transform);
+        Enemy scrEnemy = enemy.GetComponent<Enemy>();
+        scrEnemy.Init(tr, 1000); //수정예정!
     }
 }
