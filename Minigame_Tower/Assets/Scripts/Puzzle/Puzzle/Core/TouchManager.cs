@@ -76,7 +76,7 @@ public class TouchManager : MonoBehaviour
         offClickPosition = Mouse.current.position.ReadValue();
         dragDir = (offClickPosition - onClickPosition);
 
-        Character_Base touchedCharacter = touchedObject.transform.GetChild(0).GetComponent<Character_Base>();
+        
 
 
 
@@ -92,15 +92,7 @@ public class TouchManager : MonoBehaviour
                 if (touchedIndexX < blockController.blockXSize - 1 && !isMoving)
                 {
                     targetIndexX += 1;
-                    targetObject = blockController.blocks[targetIndexY][targetIndexX];
-                    if (targetObject.transform.childCount == 0)
-                    {
-                        return;
-                    }
-
-                    Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-                    targetCharacter.AnimationActive("Left");
-                    touchedCharacter.AnimationActive("Right");
+                    MoveCharacter("Left", "Right");
                 }
                 else
                 {
@@ -113,17 +105,12 @@ public class TouchManager : MonoBehaviour
                 if (touchedIndexY! > 0 && !isMoving)
                 {
                     targetIndexY -= 1;
-                    targetObject = blockController.blocks[targetIndexY][targetIndexX]; if (targetObject.transform.childCount == 0)
-                    {
-                        return;
-                    }
-                    Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-
-
-                    targetCharacter.AnimationActive("Down");
-                    touchedCharacter.AnimationActive("Up");
+                    MoveCharacter("Down", "Up");
                 }
-                else Debug.Log($"위쪽 이동불가");
+                else
+                {
+                    Debug.Log($"위쪽 이동불가");
+                }
 
             }
             else if (singedAngle >= 135 || singedAngle < -135)
@@ -132,15 +119,7 @@ public class TouchManager : MonoBehaviour
                 if (touchedIndexX > 0 && !isMoving)
                 {
                     targetIndexX -= 1;
-                    targetObject = blockController.blocks[targetIndexY][targetIndexX]; if (targetObject.transform.childCount == 0)
-                    {
-                        return;
-                    }
-                    Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-
-
-                    targetCharacter.AnimationActive("Right");
-                    touchedCharacter.AnimationActive("Left");
+                    MoveCharacter("Right", "ULeftp");
                 }
                 else
                 {
@@ -153,15 +132,7 @@ public class TouchManager : MonoBehaviour
                 if (touchedIndexY < blockController.blockYSize - 1 && !isMoving)
                 {
                     targetIndexY += 1;
-                    targetObject = blockController.blocks[targetIndexY][targetIndexX]; if (targetObject.transform.childCount == 0)
-                    {
-                        return;
-                    }
-                    Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-
-
-                    targetCharacter.AnimationActive("Up");
-                    touchedCharacter.AnimationActive("Down");
+                    MoveCharacter("Up", "Down");
                 }
                 else Debug.Log("아래쪽 이동불가");
             }
@@ -179,6 +150,18 @@ public class TouchManager : MonoBehaviour
 
     }
 
+    void MoveCharacter(string targetAnim, string touchedAnim)
+    {
+        targetObject = blockController.blocks[targetIndexY][targetIndexX];
+        if (targetObject.transform.childCount == 0)
+        {
+            return;
+        }
+        Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
+        Character_Base touchedCharacter = touchedObject.transform.GetChild(0).GetComponent<Character_Base>();
+        targetCharacter.AnimationActive(targetAnim);
+        touchedCharacter.AnimationActive(touchedAnim);
+    }
 
     private void OnClick(InputAction.CallbackContext obj)
     {
