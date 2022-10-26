@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 
 public class CardScript : MonoBehaviour
@@ -7,29 +8,29 @@ public class CardScript : MonoBehaviour
     // Value of card, 2 of clubs = 2, etc
     public int value = 0;
 
-    public int GetValueOfCard() // 카드값 가져오기
+    public int GetValueOfCard()
     {
         return value;
     }
 
-    public void SetValue(int newValue) //카드값 설정하기
+    public void SetValue(int newValue)
     {
         value = newValue;
     }
 
-    public string GetSpriteName() //해당 카드 이름 가져오기 -> 수로 변경위해서
+    public string GetSpriteName()
     {
         return GetComponent<SpriteRenderer>().sprite.name;
     }
 
-    public void SetSprite(Sprite newSprite) //해당 카드 이름 설정하기 -> 수로 변경위해서
+    public void SetSprite(Sprite newSprite)
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
     }
 
-    public void ResetCard() // 카드 값 리셋시키기
+    public void ResetCard()
     {
-        Sprite back = GameObject.Find("Deck").GetComponent<DeckScript>().GetCardBack();// 덱 오브젝트에서 덱 스크립트 찾아오기
+        Sprite back = GameObject.Find("Deck").GetComponent<DeckScript>().GetCardBack();
         gameObject.GetComponent<SpriteRenderer>().sprite = back;
         value = 0;
     }

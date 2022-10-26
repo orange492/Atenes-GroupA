@@ -1,29 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 
 public class DeckScript : MonoBehaviour
 {
-    public Sprite[] cardSprites; // 카드 53개 이미지 가져오기 배열로...
-    int[] cardValues = new int[53]; // 카드 값 생성해주기
-    int currentIndex = 0;//초기화 시키기
+    public Sprite[] cardSprites;
+    int[] cardValues = new int[53];
+    int currentIndex = 0;
 
     void Start()
     {
-        GetCardValues(); // 카드값 읽어오기
+        GetCardValues();
     }
 
     void GetCardValues()
     {
         int num = 0;
-        // 
+        // Loop to assign values to the cards
         for (int i = 0; i < cardSprites.Length; i++)
         {
             num = i;
-            
-            num %= 13; // 총 12의 값으로 나와야되니깐...
-            
-            if(num > 10 || num == 0)
+            // Count up to the amout of cards, 52
+            num %= 13;
+            // if there is a remainder after x/13, then remainder
+            // is used as the value, unless over 10, the use 10
+            if (num > 10 || num == 0)
             {
                 num = 10;
             }
@@ -31,10 +33,10 @@ public class DeckScript : MonoBehaviour
         }
     }
 
-    public void Shuffle() // 셔플해주기
+    public void Shuffle()
     {
-        
-        for(int i = cardSprites.Length -1; i > 0; --i)
+        // Standard array data swapping technique
+        for (int i = cardSprites.Length - 1; i > 0; --i)
         {
             int j = Mathf.FloorToInt(Random.Range(0.0f, 1.0f) * cardSprites.Length - 1) + 1;
             Sprite face = cardSprites[i];
@@ -48,7 +50,7 @@ public class DeckScript : MonoBehaviour
         currentIndex = 1;
     }
 
-    public int DealCard(CardScript cardScript) // 딜러카드 세팅해주기
+    public int DealCard(CardScript cardScript)
     {
         cardScript.SetSprite(cardSprites[currentIndex]);
         cardScript.SetValue(cardValues[currentIndex]);
