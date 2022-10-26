@@ -126,7 +126,7 @@ public class TouchManager : MonoBehaviour
 
             if (touchedObject != null && targetObject != null && touchedObject != targetObject)
             {
-                    StartCoroutine(ChildChange(touchedObject, targetObject));
+                StartCoroutine(ChildChange(touchedObject, targetObject));
             }
         }
         else
@@ -169,7 +169,7 @@ public class TouchManager : MonoBehaviour
             Debug.Log($"{touchedObject}");
 
             touchedIndexX = touchedObject.transform.GetComponent<Block>().IndexX; //블록의 인덱스 찾기
-            touchedIndexY = touchedObject.transform.GetComponent<Block>().IndexY; 
+            touchedIndexY = touchedObject.transform.GetComponent<Block>().IndexY;
             targetIndexX = touchedIndexX;
             targetIndexY = touchedIndexY;
         }
@@ -188,7 +188,7 @@ public class TouchManager : MonoBehaviour
 
         touched.transform.GetChild(0).transform.parent = transform;
         target.transform.GetChild(0).transform.parent = touched.transform;
-        transform.GetChild(0).transform.parent = target.transform; 
+        transform.GetChild(0).transform.parent = target.transform;
         if (blockController.ThreeMatchCheck(touchedIndexX, touchedIndexY) ||
             blockController.ThreeMatchCheck(targetIndexX, targetIndexY))
         {
