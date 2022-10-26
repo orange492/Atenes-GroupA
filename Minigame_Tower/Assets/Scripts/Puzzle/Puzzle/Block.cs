@@ -11,10 +11,11 @@ public class Block : MonoBehaviour
     public GameObject characterPrefab;
     int indexX;
     int indexY;
-    bool isThreeMatch = false;
+    
     BlockController blockController;
 
 
+    
     public int IndexX
     {
         get => indexX;
@@ -41,15 +42,7 @@ public class Block : MonoBehaviour
         }
     }
 
-    public bool IsThreeMatch
-    {
-        get => isThreeMatch;
-        set
-        {
-            isThreeMatch = value;
-        }
-
-    }
+  
 
     private void Start()
     {
@@ -71,28 +64,13 @@ public class Block : MonoBehaviour
 
         }
 
-        if (isThreeMatch)
-        {
-
-            StartCoroutine(DestroyCharacter());
-
-        }
-        else
-        {
-            StopAllCoroutines();
-        }
 
 
-        //{
-        //    transform.GetChild(0).gameObject.SetActive(false);
-        //}
-        //if (!transform.GetChild(0).gameObject.activeSelf)
-        //{
-        //    transform.GetComponentInChildren<Character_Base>().AnimalType
-        //}
+
+ 
     }
 
-    IEnumerator DestroyCharacter()
+    public IEnumerator DestroyCharacter()
     {
 
         yield return new WaitForSeconds(0.5f);
@@ -100,7 +78,7 @@ public class Block : MonoBehaviour
         {
             Destroy(transform.GetChild(0).gameObject); 
         }
-        isThreeMatch = false;
+       
     }
 
 

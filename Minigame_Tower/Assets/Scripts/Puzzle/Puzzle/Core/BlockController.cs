@@ -263,7 +263,8 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        blocks[Y][X + i].transform.GetComponent<Block>().IsThreeMatch = true;
+                        Block block = blocks[Y][X + i].transform.GetComponent<Block>();
+                        block.StartCoroutine(block.DestroyCharacter());
                     }
 
                     for (int i = 0; i < 2; i++)
@@ -286,7 +287,8 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        blocks[Y][X + i - 1].transform.GetComponent<Block>().IsThreeMatch = true;
+                        Block block= blocks[Y][X + i - 1].transform.GetComponent<Block>();
+                        block.StartCoroutine(block.DestroyCharacter());
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -308,7 +310,9 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        blocks[Y][X + i - 2].transform.GetComponent<Block>().IsThreeMatch = true;
+                   
+                        Block block = blocks[Y][X + i -2].transform.GetComponent<Block>();
+                        block.StartCoroutine(block.DestroyCharacter());
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -401,7 +405,8 @@ public class BlockController : MonoBehaviour
 
                     for (int i = 0; i < 3; i++)
                     {
-                        blocks[Y + i][X].transform.GetComponent<Block>().IsThreeMatch = true;
+                        Block block = blocks[Y+i][X].transform.GetComponent<Block>();
+                        block.StartCoroutine(block.DestroyCharacter());
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -422,7 +427,9 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        blocks[Y + i - 1][X].transform.GetComponent<Block>().IsThreeMatch = true;
+              
+                        Block block = blocks[Y + i-1][X].transform.GetComponent<Block>();
+                        block.StartCoroutine(block.DestroyCharacter());
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -443,7 +450,8 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        blocks[Y + i - 2][X].transform.GetComponent<Block>().IsThreeMatch = true;
+                        Block block = blocks[Y + i-2][X].transform.GetComponent<Block>();
+                        block.StartCoroutine(block.DestroyCharacter());
                     }
                     for (int i = 0; i < 2; i++)
                     {

@@ -52,6 +52,10 @@ public class TouchManager : MonoBehaviour
 
     private void OffClick(InputAction.CallbackContext obj)
     {
+        if (IsClickLock)
+        {
+            return;
+        }
         if (touchedObject == null) //터치한 오브젝트가 있는지 확인
         {
             return;
@@ -124,36 +128,19 @@ public class TouchManager : MonoBehaviour
                 else Debug.Log("아래쪽 이동불가");
             }
 
-            if (touchedObject != null && targetObject != null && touchedObject != targetObject)
-            {
-                StartCoroutine(ChildChange(touchedObject, targetObject));
-            }
+
+
         }
-        else
-        {
-            isClickLock = false;
-        }
+       
     }
 
-    void MoveCharacter(string targetAnim, string touchedAnim)
-    {
-        targetObject = blockController.blocks[targetIndexY][targetIndexX];
-        if (targetObject.transform.childCount == 0)
-        {
-            return;
-        }
-        Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-        Character_Base touchedCharacter = touchedObject.transform.GetChild(0).GetComponent<Character_Base>();
-        targetCharacter.AnimationActive(targetAnim);
-        touchedCharacter.AnimationActive(touchedAnim);
-    }
+
 
     private void OnClick(InputAction.CallbackContext obj)
     {
 
         onClickPosition = Mouse.current.position.ReadValue();
-        touchedObject = null; //이전 클릭에서 저장된 오븍제트 초기화
-        targetObject = null;
+       
 
         if (isClickLock)
         {
@@ -176,19 +163,35 @@ public class TouchManager : MonoBehaviour
 
     }
 
-    IEnumerator ChildChange(GameObject touched, GameObject target)
+    void MoveCharacter(string targetAnim, string touchedAnim)
     {
-        yield return new WaitForSeconds(0.5f);
-
-        if (touched.transform.childCount == 0 ||
-            target.transform.childCount == 0)
+        targetObject = blockController.blocks[targetIndexY][targetIndexX];
+        if (targetObject.transform.childCount == 0)
         {
-            yield break;
+            return;
+        }
+        Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
+        Character_Base touchedCharacter = touchedObject.transform.GetChild(0).GetComponent<Character_Base>();
+        targetCharacter.AnimationActive(targetAnim);
+        touchedCharacter.AnimationActive(touchedAnim);
+    }
+
+    public void ChildChange()
+    {
+
+        if (touchedObject == null || targetObject == null || touchedObject == targetObject)
+        {
+            return;
+        }
+        if (touchedObject.transform.childCount == 0 ||
+            targetObject.transform.childCount == 0)
+        {
+            return;
         }
 
-        touched.transform.GetChild(0).transform.parent = transform;
-        target.transform.GetChild(0).transform.parent = touched.transform;
-        transform.GetChild(0).transform.parent = target.transform;
+        touchedObject.transform.GetChild(0).transform.parent = transform;
+        targetObject.transform.GetChild(0).transform.parent = touchedObject.transform;
+        transform.GetChild(0).transform.parent = targetObject.transform;
         if (blockController.ThreeMatchCheck(touchedIndexX, touchedIndexY) ||
             blockController.ThreeMatchCheck(targetIndexX, targetIndexY))
         {
@@ -197,9 +200,19 @@ public class TouchManager : MonoBehaviour
         }
         else
         {
-            touched.transform.GetChild(0).transform.parent = transform;
-            target.transform.GetChild(0).transform.parent = touched.transform;
-            transform.GetChild(0).transform.parent = target.transform;
+            touchedObject.transform.GetChild(0).transform.parent = transform;
+            targetObject.transform.GetChild(0).transform.parent = touchedObject.transform;
+            transform.GetChild(0).transform.parent = targetObject.transform;
         }
+
+
+        return;
+
+    }
+
+    public void ResetObject() //이전 클릭에서 저장된 오브젝트 초기화
+    {
+        touchedObject = null;
+        targetObject = null;
     }
 }
