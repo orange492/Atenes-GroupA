@@ -27,15 +27,9 @@ public class TouchManager : MonoBehaviour
         set => isClickLock = value;
     }
 
-
-
-
     private void Awake()
     {
         inputActions = new InputActions();
-
-
-
     }
     private void Start()
     {
@@ -58,9 +52,6 @@ public class TouchManager : MonoBehaviour
 
     private void OffClick(InputAction.CallbackContext obj)
     {
-
-
-
         if (touchedObject == null) //터치한 오브젝트가 있는지 확인
         {
             return;
@@ -75,10 +66,6 @@ public class TouchManager : MonoBehaviour
         }
         offClickPosition = Mouse.current.position.ReadValue();
         dragDir = (offClickPosition - onClickPosition);
-
-        
-
-
 
         if (dragDir.magnitude > Vector2.right.magnitude * 50) //드래그 모션인지 확인
         {
@@ -146,8 +133,6 @@ public class TouchManager : MonoBehaviour
         {
             isClickLock = false;
         }
-
-
     }
 
     void MoveCharacter(string targetAnim, string touchedAnim)
@@ -175,7 +160,6 @@ public class TouchManager : MonoBehaviour
             return;
         }
 
-
         Vector2 touchPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         RaycastHit2D hitInformation = Physics2D.Raycast(touchPos, Camera.main.transform.forward);
         if (hitInformation.collider != null)
@@ -188,10 +172,6 @@ public class TouchManager : MonoBehaviour
             touchedIndexY = touchedObject.transform.GetComponent<Block>().IndexY; 
             targetIndexX = touchedIndexX;
             targetIndexY = touchedIndexY;
-
-
-
-
         }
 
     }
@@ -222,9 +202,4 @@ public class TouchManager : MonoBehaviour
             transform.GetChild(0).transform.parent = target.transform;
         }
     }
-
-
-
-
-
 }
