@@ -53,13 +53,18 @@ public class Block : MonoBehaviour
 
     private void Start()
     {
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> parent of bede32a (블랙잭 오류수정1차)
         Instantiate(characterPrefab, transform.position, transform.rotation, transform);
         blockController = FindObjectOfType<BlockController>();
 
     }
     private void Update()
     {
+<<<<<<< HEAD
 
         if (transform.childCount == 0 && indexY == 0)
         {
@@ -77,6 +82,25 @@ public class Block : MonoBehaviour
             StartCoroutine(DestroyCharacter());
 
         }
+=======
+       
+            if (transform.childCount == 0 && indexY == 0)
+            {
+              
+                Instantiate(characterPrefab, transform.position, transform.rotation, transform);
+                blockController.StartCoroutine(blockController.CharacterDown());
+
+
+
+            }
+        
+        if (isThreeMatch)
+        {
+
+            StartCoroutine(DestroyCharacter());
+
+        }
+>>>>>>> parent of bede32a (블랙잭 오류수정1차)
         else
         {
             StopAllCoroutines();
@@ -97,9 +121,13 @@ public class Block : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         if (transform.childCount != 0)
+<<<<<<< HEAD
         {
             Destroy(transform.GetChild(0).gameObject); 
         }
+=======
+            Destroy(transform.GetChild(0).gameObject);
+>>>>>>> parent of bede32a (블랙잭 오류수정1차)
         isThreeMatch = false;
     }
 

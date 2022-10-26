@@ -1605,7 +1605,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1754,6 +1754,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ea932dad6042b43b479259429f8f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tr:
+  - {fileID: 1832551226}
+  - {fileID: 671566673}
+  - {fileID: 1615531258}
+  enemyPref: {fileID: 2659535454145375260, guid: e1f40676be962464c97846fae65facc1, type: 3}
 --- !u!4 &818419745
 Transform:
   m_ObjectHideFlags: 0
@@ -1762,7 +1767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818419743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2184443, y: -0.19662505, z: -0.032608025}
+  m_LocalPosition: {x: -2.15, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2029,6 +2034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c5d8f1c54c8cd4cad016d907820090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oLife: {fileID: 1789275072}
 --- !u!114 &1087317912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2084,7 +2090,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1789275073}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3089,9 +3095,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1109731645}
-  - {fileID: 1369500969}
   - {fileID: 2137053141}
+  - {fileID: 1369500969}
+  - {fileID: 1109731645}
   m_Father: {fileID: 231403327}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3439,7 +3445,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3566,7 +3572,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1789275073}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

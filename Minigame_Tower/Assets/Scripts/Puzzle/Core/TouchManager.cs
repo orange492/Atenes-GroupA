@@ -19,7 +19,11 @@ public class TouchManager : MonoBehaviour
     int targetIndexY;
     bool isMoving = false;
     bool isClickLock = false;
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
 
+=======
+   IEnumerator delayIsClickLockCoroutine; 
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
 
     public bool IsClickLock
     {
@@ -33,7 +37,11 @@ public class TouchManager : MonoBehaviour
     private void Awake()
     {
         inputActions = new InputActions();
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
 
+=======
+        delayIsClickLockCoroutine = DelaySetIsClickLock();
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
 
 
     }
@@ -58,10 +66,18 @@ public class TouchManager : MonoBehaviour
 
     private void OffClick(InputAction.CallbackContext obj)
     {
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
 
 
 
         if (touchedObject == null) //터치한 오브젝트가 있는지 확인
+=======
+        StopAllCoroutines();
+        StartCoroutine(DelaySetIsClickLock());
+
+      
+        if (touchedObject == null)
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
         {
             return;
         }
@@ -70,6 +86,10 @@ public class TouchManager : MonoBehaviour
             return;
         }
         if (touchedObject.transform.childCount == 0) //터치한 오브젝트의 자식이 있는지 확인
+        {
+            return;
+        }
+        if (touchedObject.transform.childCount == 0)
         {
             return;
         }
@@ -82,7 +102,11 @@ public class TouchManager : MonoBehaviour
 
         if (dragDir.magnitude > Vector2.right.magnitude * 50) //드래그 모션인지 확인
         {
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
             float singedAngle = Vector2.SignedAngle(Vector2.right, dragDir); //상하좌우 판별을 위한 두벡터의 사이각 구하기
+=======
+            float singedAngle = Vector2.SignedAngle(Vector2.right, dragDir);
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
 
 
 
@@ -93,11 +117,19 @@ public class TouchManager : MonoBehaviour
                 {
                     targetIndexX += 1;
                     targetObject = blockController.blocks[targetIndexY][targetIndexX];
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
                     if (targetObject.transform.childCount == 0)
                     {
                         return;
                     }
 
+=======
+                    if(targetObject.transform.childCount == 0)
+                    {
+                        return;
+                    }
+                   
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
                     Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
                     targetCharacter.AnimationActive("Left");
                     touchedCharacter.AnimationActive("Right");
@@ -169,6 +201,12 @@ public class TouchManager : MonoBehaviour
             if (touchedObject != null && targetObject != null && touchedObject != targetObject)
             {
                     StartCoroutine(ChildChange(touchedObject, targetObject));
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
+=======
+
+
+                }
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
             }
         }
         else
@@ -182,7 +220,12 @@ public class TouchManager : MonoBehaviour
 
     private void OnClick(InputAction.CallbackContext obj)
     {
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
 
+=======
+        StopAllCoroutines();
+        StartCoroutine(DelaySetIsClickLock());
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
         onClickPosition = Mouse.current.position.ReadValue();
         touchedObject = null; //이전 클릭에서 저장된 오븍제트 초기화
         targetObject = null;
@@ -191,8 +234,13 @@ public class TouchManager : MonoBehaviour
         {
             return;
         }
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
 
 
+=======
+        
+        isClickLock = true;
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
         Vector2 touchPos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         RaycastHit2D hitInformation = Physics2D.Raycast(touchPos, Camera.main.transform.forward);
         if (hitInformation.collider != null)
@@ -201,9 +249,14 @@ public class TouchManager : MonoBehaviour
             touchedObject = hitInformation.transform.gameObject;
             Debug.Log($"{touchedObject}");
 
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
             touchedIndexX = touchedObject.transform.GetComponent<Block>().IndexX; //블록의 인덱스 찾기
             touchedIndexY = touchedObject.transform.GetComponent<Block>().IndexY; 
             targetIndexX = touchedIndexX;
+=======
+            touchedIndexX = touchedObject.transform.GetComponent<Block>().IndexX;
+            touchedIndexY = touchedObject.transform.GetComponent<Block>().IndexY; targetIndexX = touchedIndexX;
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
             targetIndexY = touchedIndexY;
 
 
@@ -216,18 +269,28 @@ public class TouchManager : MonoBehaviour
     IEnumerator ChildChange(GameObject touched, GameObject target)
     {
         yield return new WaitForSeconds(0.5f);
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
 
         if (touched.transform.childCount == 0 ||
             target.transform.childCount == 0)
+=======
+        if(touched.transform.childCount==0||
+        target.transform.childCount == 0)
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
         {
             yield break;
         }
 
         touched.transform.GetChild(0).transform.parent = transform;
         target.transform.GetChild(0).transform.parent = touched.transform;
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
         transform.GetChild(0).transform.parent = target.transform; 
         if (blockController.ThreeMatchCheck(touchedIndexX, touchedIndexY) ||
             blockController.ThreeMatchCheck(targetIndexX, targetIndexY))
+=======
+        transform.GetChild(0).transform.parent = target.transform; if (blockController.ThreeMatchCheck(touchedIndexX, touchedIndexY) ||
+                        blockController.ThreeMatchCheck(targetIndexX, targetIndexY))
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
         {
             blockController.ThreeMatchAction(touchedIndexX, touchedIndexY);
             blockController.ThreeMatchAction(targetIndexX, targetIndexY);
@@ -240,8 +303,17 @@ public class TouchManager : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD:Minigame_Tower/Assets/Scripts/Puzzle/Core/TouchManager.cs
 
 
 
 
+=======
+    public IEnumerator DelaySetIsClickLock()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("DelayLock");
+        IsClickLock = false;
+    }
+>>>>>>> parent of bede32a (블랙잭 오류수정1차):Minigame_Tower/Assets/Scripts/Puzzle/TouchManager.cs
 }
