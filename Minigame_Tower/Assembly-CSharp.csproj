@@ -57,15 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\EnemySpawner.cs" />
-    <Compile Include="Assets\Font\Puzzle\OnCharacterAnimationEnd.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Unit.cs" />
     <Compile Include="Assets\Resources\Scripts\Blackjack\DeckScript.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\DefenceManager.cs" />
-    <Compile Include="Assets\Font\Puzzle\Characters\Character_Base.cs" />
-    <Compile Include="Assets\Resources\InputActions\InputActions.cs" />
+    <Compile Include="Assets\InputActions\InputActions.cs" />
     <Compile Include="Assets\CharacterAnimation.cs" />
-    <Compile Include="Assets\Font\Puzzle\Core\CameraAgent.cs" />
-    <Compile Include="Assets\Font\Puzzle\Core\BlockController.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\ClickManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Blackjack\Core\Singletons.cs" />
     <Compile Include="Assets\Resources\Scripts\Blackjack\Core\GameManager.cs" />
@@ -74,10 +70,8 @@
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\MapManager.cs" />
     <Compile Include="Assets\Resources\Scripts\Blackjack\CardScript.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Manager\DataManager.cs" />
-    <Compile Include="Assets\Font\Puzzle\Block.cs" />
     <Compile Include="Assets\Resources\Scripts\Blackjack\PlayerScript.cs" />
     <Compile Include="Assets\Resources\Scripts\Defence\Enemy.cs" />
-    <Compile Include="Assets\Font\Puzzle\Core\TouchManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Img\BlackJack\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
