@@ -20,10 +20,10 @@ public class DeckScript : MonoBehaviour
         for (int i = 0; i < cardSprites.Length; i++)
         {
             num = i;
-            
+
             num %= 13; // 총 12의 값으로 나와야되니깐...
-            
-            if(num > 10 || num == 0)
+
+            if (num > 10 || num == 0)
             {
                 num = 10;
             }
@@ -33,8 +33,8 @@ public class DeckScript : MonoBehaviour
 
     public void Shuffle() // 셔플해주기
     {
-        
-        for(int i = cardSprites.Length -1; i > 0; --i)
+
+        for (int i = cardSprites.Length - 1; i > 0; --i)
         {
             int j = Mathf.FloorToInt(Random.Range(0.0f, 1.0f) * cardSprites.Length - 1) + 1;
             Sprite face = cardSprites[i];

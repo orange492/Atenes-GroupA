@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : Singletons<GameManager>
+public class BlackjackManager : Singletons<GameManager>
 {
-   
+
 
     // Game Buttons
     public Button dealBtn; // 딜, 카드를 나누는 버튼(셔플 개념) -> 패돌림 -> 리셋!
@@ -15,7 +15,7 @@ public class GameManager : Singletons<GameManager>
     public Button betBtn; // 배팅, 칩을 더 건다는 버튼 ->칩걸기 ->> 항상 고정적으로 배팅될수 있게 변경 필요
 
 
-   
+
 
 
     private int standClicks = 0; // 처음 스킵하는 버튼 횟수는 0으로 초기화
@@ -31,7 +31,7 @@ public class GameManager : Singletons<GameManager>
     public Text cashText; // 얼마 남아 있는지... HP 개념
     public Text mainText; // 승패 판정할때 뜨는 텍스트
     public Text standBtnText; // 콜 얼마걸지 배팅하는데 나오는 텍스트
-    
+
 
     //적 스테이터스 개념... -> 추후 보이도록 변경필요함!
     public Text scoreText2; // 플레이어 점수 스코어 , 21을 생각하고
@@ -45,7 +45,7 @@ public class GameManager : Singletons<GameManager>
     //  딜러는 2번째 카드 부터 숨긴다 
     public GameObject hideCard;
     //얼마나 걸건지, 기본 배팅단위
-    public int pot = 20; 
+    public int pot = 20;
 
     void Start()
     {
@@ -75,7 +75,7 @@ public class GameManager : Singletons<GameManager>
         // 버튼들 보이게 조정하기
         dealBtn.gameObject.SetActive(false); // 패돌리는 버튼 안보이게 하기
         hitBtn.gameObject.SetActive(true); // 카드 한장 가져오는 버튼 보이기
-        
+
         standBtn.gameObject.SetActive(true); //한 턴 쉬는 버튼 보이기
         standBtnText.text = "턴넘겨"; // 기본 베팅 단위 출력!
         //  기본 배팅금액 등등 설정
@@ -88,12 +88,12 @@ public class GameManager : Singletons<GameManager>
 
     private void HitClicked() // 카드한장 가져오는 버튼 클릭시 발동되는 함수
     {
-       
+
         if (playerScript.cardIndex <= 10)
         {
             playerScript.GetCard();
             scoreText.text = "손패점수: " + playerScript.handValue.ToString();
-           
+
             if (playerScript.handValue > 20) RoundOver();
         }
     }
@@ -128,12 +128,12 @@ public class GameManager : Singletons<GameManager>
         bool player21 = playerScript.handValue == 21; // 플레이어가 이긴다
         bool dealer21 = dealerScript.handValue == 21; // 딜러가 이긴다
         // 턴 2번 이상 돌렷을때 그리고 플레이어랑 딜러 둘다 21이 아닐때 -> 판정시작
-        if (standClicks < 2 && !playerBust && !dealerBust && !player21 && !dealer21)  
+        if (standClicks < 2 && !playerBust && !dealerBust && !player21 && !dealer21)
             return;
         bool roundOver = true;
         // 다 21이 넘었을때
         if (playerBust && dealerBust)
-        {   
+        {
             mainText.text = "무승부 입니다(버스트)";
             playerScript.AdjustMoney(pot / 2);
         }
@@ -187,6 +187,6 @@ public class GameManager : Singletons<GameManager>
         betsText.text = "얼마걸까: $" + pot.ToString();
     }
 
-  
+
 
 }

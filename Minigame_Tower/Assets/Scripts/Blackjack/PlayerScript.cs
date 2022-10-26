@@ -10,15 +10,15 @@ public class PlayerScript : MonoBehaviour
     public CardScript cardScript;
     public DeckScript deckScript;
 
-   
+
     public int handValue = 0;
 
 
     public int money = 500; // 얼마 베팅할지
 
-  
+
     public GameObject[] hand;
-  
+
     public int cardIndex = 0;
 
     List<CardScript> aceList = new List<CardScript>();
@@ -29,12 +29,12 @@ public class PlayerScript : MonoBehaviour
         GetCard();
     }
 
- 
+
     public int GetCard() //카드읽어오기
     {
-    
+
         hand[cardIndex].GetComponent<Renderer>().enabled = true;
-     
+
         {
             aceList.Add(hand[cardIndex].GetComponent<CardScript>());
         }
@@ -47,18 +47,18 @@ public class PlayerScript : MonoBehaviour
 
     public void AceCheck()
     {
-        
+
         foreach (CardScript ace in aceList)
         {
             if (handValue + 10 < 22 && ace.GetValueOfCard() == 1)
             {
-                
+
                 ace.SetValue(11);
                 handValue += 10;
             }
             else if (handValue > 21 && ace.GetValueOfCard() == 11)
             {
-               
+
                 ace.SetValue(1);
                 handValue -= 10;
             }
