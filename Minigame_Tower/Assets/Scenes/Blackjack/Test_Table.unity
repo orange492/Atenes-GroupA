@@ -357,7 +357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -421,14 +420,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889225993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b94cb82004c964a8269a616783e349, type: 3}
+  m_Script: {fileID: 11500000, guid: aca1a89e93168d94e849d7a69b1c5db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dealBtn: {fileID: 0}
   hitBtn: {fileID: 0}
   standBtn: {fileID: 0}
   betBtn: {fileID: 0}
-  playerScript: {fileID: 331272684}
+  playerScript: {fileID: 0}
   dealerScript: {fileID: 0}
   scoreText: {fileID: 0}
   dealerScoreText: {fileID: 0}
@@ -436,7 +435,11 @@ MonoBehaviour:
   cashText: {fileID: 0}
   mainText: {fileID: 0}
   standBtnText: {fileID: 0}
+  scoreText2: {fileID: 0}
+  betsText2: {fileID: 0}
+  cashText2: {fileID: 0}
   hideCard: {fileID: 0}
+  pot: 20
 --- !u!4 &1889225995
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BlackjackManager : Singletons<GameManager>
+public class BlackjackManager : Singletons<BlackjackManager>
 {
 
 
