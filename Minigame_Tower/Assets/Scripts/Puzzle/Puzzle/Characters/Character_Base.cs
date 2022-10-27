@@ -43,10 +43,14 @@ public class Character_Base : MonoBehaviour
         sprite = transform.GetComponent<SpriteRenderer>();
 
         AnimalType = (int)Random.Range(0.0f, sprites.Length - 0.1f);
-        sprite.sprite = sprites[AnimalType];
+        
         anim = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        sprite.sprite = sprites[AnimalType];
+    }
     private void Update()
     {
 

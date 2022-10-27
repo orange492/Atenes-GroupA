@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnCharacterAnimationEnd : StateMachineBehaviour
+public class CharacterMovingAnimationState : StateMachineBehaviour
 {
     BlockController blockController;
     TouchManager touchManager;
