@@ -7,7 +7,10 @@ public class Platform : MonoBehaviour
     public Vector2 move_dir = Vector2.right;
     public float distance = 2.0f;
     public float move_time = 4.0f;
-    public void Start()
+
+    public bool arrived = false; // 플랫폼이 이동을 완료 했을때 Flag가 True로 되는 변수
+
+    public void Activate(float time)
     {
         StartCoroutine(Moveoverthereinafewseconds((Vector2)transform.position + move_dir * distance, move_time));
     }
@@ -24,12 +27,6 @@ public class Platform : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
 
-        Arrive();
+        arrived = true;
     }
-
-    public void Arrive()
-    {
-        move_dir *= -1.0f;
-        StartCoroutine(Moveoverthereinafewseconds((Vector2)transform.position + move_dir * distance, move_time));
-    }
-}
+ }
