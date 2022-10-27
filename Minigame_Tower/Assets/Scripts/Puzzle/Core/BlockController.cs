@@ -251,7 +251,7 @@ public class BlockController : MonoBehaviour
     void XThreeMatchAction(int X, int Y, int animalType)
     {
         Character_Base[] characters;
-        characters = new Character_Base[2];
+        characters = new Character_Base[4];
 
         if (X + 2 < blockXSize)
         {
