@@ -64,7 +64,7 @@ public class TouchManager : MonoBehaviour
         {
             return;
         }
-        if (touchedObject.transform.childCount == 0) //터치한 오브젝트의 자식이 있는지 확인
+        if (touchedObject.transform.childCount == 1) //터치한 오브젝트의 자식이 있는지 확인
         {
             return;
         }
@@ -166,12 +166,12 @@ public class TouchManager : MonoBehaviour
     void MoveCharacter(string targetAnim, string touchedAnim)
     {
         targetObject = blockController.blocks[targetIndexY][targetIndexX];
-        if (targetObject.transform.childCount == 0)
+        if (targetObject.transform.childCount == 1)
         {
             return;
         }
-        Character_Base targetCharacter = targetObject.transform.GetChild(0).GetComponent<Character_Base>();
-        Character_Base touchedCharacter = touchedObject.transform.GetChild(0).GetComponent<Character_Base>();
+        Character_Base targetCharacter = targetObject.transform.GetChild(1).GetComponent<Character_Base>();
+        Character_Base touchedCharacter = touchedObject.transform.GetChild(1).GetComponent<Character_Base>();
         targetCharacter.AnimationActive(targetAnim);
         touchedCharacter.AnimationActive(touchedAnim);
     }
@@ -183,14 +183,14 @@ public class TouchManager : MonoBehaviour
         {
             return;
         }
-        if (touchedObject.transform.childCount == 0 ||
-            targetObject.transform.childCount == 0)
+        if (touchedObject.transform.childCount == 1 ||
+            targetObject.transform.childCount == 1)
         {
             return;
         }
 
-        touchedObject.transform.GetChild(0).transform.parent = transform;
-        targetObject.transform.GetChild(0).transform.parent = touchedObject.transform;
+        touchedObject.transform.GetChild(1).transform.parent = transform;
+        targetObject.transform.GetChild(1).transform.parent = touchedObject.transform;
         transform.GetChild(0).transform.parent = targetObject.transform;
         if (blockController.ThreeMatchCheck(touchedIndexX, touchedIndexY) ||
             blockController.ThreeMatchCheck(targetIndexX, targetIndexY))
@@ -200,8 +200,8 @@ public class TouchManager : MonoBehaviour
         }
         else
         {
-            touchedObject.transform.GetChild(0).transform.parent = transform;
-            targetObject.transform.GetChild(0).transform.parent = touchedObject.transform;
+            touchedObject.transform.GetChild(1).transform.parent = transform;
+            targetObject.transform.GetChild(1).transform.parent = touchedObject.transform;
             transform.GetChild(0).transform.parent = targetObject.transform;
         }
 

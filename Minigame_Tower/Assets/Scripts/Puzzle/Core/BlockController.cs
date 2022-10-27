@@ -75,7 +75,7 @@ public class BlockController : MonoBehaviour
         {
             for (int j = 0; j < blockYSize; j++)
             {
-                if (blocks[j][i].transform.childCount == 0)
+                if (blocks[j][i].transform.childCount == 1)
                 {
                     return false;
                 }
@@ -263,8 +263,8 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        Block block = blocks[Y][X + i].transform.GetComponent<Block>();
-                        block.StartCoroutine(block.DestroyCharacter());
+
+                        CharacterDestroyAndAnimation(X + i, Y);
                     }
 
                     for (int i = 0; i < 2; i++)
@@ -287,8 +287,7 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        Block block= blocks[Y][X + i - 1].transform.GetComponent<Block>();
-                        block.StartCoroutine(block.DestroyCharacter());
+                        CharacterDestroyAndAnimation(X + i - 1, Y);
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -310,9 +309,7 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                   
-                        Block block = blocks[Y][X + i -2].transform.GetComponent<Block>();
-                        block.StartCoroutine(block.DestroyCharacter());
+                        CharacterDestroyAndAnimation(X + i -2, Y);
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -405,8 +402,7 @@ public class BlockController : MonoBehaviour
 
                     for (int i = 0; i < 3; i++)
                     {
-                        Block block = blocks[Y+i][X].transform.GetComponent<Block>();
-                        block.StartCoroutine(block.DestroyCharacter());
+                        CharacterDestroyAndAnimation(X , Y+i);
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -420,16 +416,15 @@ public class BlockController : MonoBehaviour
 
         if (Y + 1 < blockYSize && Y - 1 >= 0)
         {
-            characters[0] = blocks[Y - 1][X].GetComponentInChildren<Character_Base>(); characters[1] = blocks[Y + 1][X].GetComponentInChildren<Character_Base>();
+            characters[0] = blocks[Y - 1][X].GetComponentInChildren<Character_Base>(); 
+            characters[1] = blocks[Y + 1][X].GetComponentInChildren<Character_Base>();
             if (characters[0] != null && characters[1] != null)
             {
                 if ((animalType == characters[0].AnimalType) && animalType == characters[1].AnimalType)
                 {
                     for (int i = 0; i < 3; i++)
                     {
-              
-                        Block block = blocks[Y + i-1][X].transform.GetComponent<Block>();
-                        block.StartCoroutine(block.DestroyCharacter());
+                        CharacterDestroyAndAnimation(X, Y+i-1);
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -450,8 +445,7 @@ public class BlockController : MonoBehaviour
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        Block block = blocks[Y + i-2][X].transform.GetComponent<Block>();
-                        block.StartCoroutine(block.DestroyCharacter());
+                        CharacterDestroyAndAnimation(X, Y + i -2);
                     }
                     for (int i = 0; i < 2; i++)
                     {
@@ -474,14 +468,21 @@ public class BlockController : MonoBehaviour
         {
             for (int j = 0; j < blockYSize - 1; j++)
             {
-                if (blocks[j][i].transform.childCount == 1 && blocks[j + 1][i].transform.childCount == 0)
+                if (blocks[j][i].transform.childCount == 2 && blocks[j + 1][i].transform.childCount == 1)
                 {
-                    blocks[j][i].transform.GetChild(0).transform.parent = blocks[j + 1][i].transform;
+                    blocks[j][i].transform.GetChild(1).transform.parent = blocks[j + 1][i].transform;
                 }
             }
 
         }
 
+    }
+
+    void CharacterDestroyAndAnimation(int X, int Y)
+    {
+        Block block = blocks[Y][X].transform.GetComponent<Block>();
+        block.PangAnimationActive();
+        
     }
 
 

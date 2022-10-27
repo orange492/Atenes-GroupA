@@ -51,6 +51,6 @@ TagManager:
   - name: Character
     uniqueID: 1797531741
     locked: 0
-  - name: HUG
+  - name: Effect
     uniqueID: 88339203
     locked: 0
